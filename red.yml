@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://gateway.ipaas.localdomain:8080
+functions:
+  red:
+    lang: dockerfile
+    handler: ./red
+    image: kaykelins/red:latest
+
