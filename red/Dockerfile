@@ -24,7 +24,7 @@ ENV fprocess="yarn start"
 ENV write_debug="false"
 
 EXPOSE 1880
-HEALTHCHECK --interval=3s CMD ["curl","localhost:1880/health"]
+HEALTHCHECK --interval=3s CMD ["curl","localhost:8080/health"]
 
 CMD ["fwatchdog"]
 CMD ["yarn","start"]

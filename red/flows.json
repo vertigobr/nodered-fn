@@ -209,7 +209,7 @@
         "type": "http in",
         "z": "999ea347.cf",
         "name": "",
-        "url": "/health",
+        "url": "/_/health",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
