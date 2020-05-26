@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: red
+spec:
+  rules:
+  - host: proxy.api.vertigo.com.br
+    http:
+      paths:
+      - path: /function/red
+        backend:
+          serviceName: red
+          servicePort: 8080
+
