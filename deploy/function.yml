@@ -1,0 +1,13 @@
+---
+apiVersion: openfaas.com/v1alpha2
+kind: Function
+metadata:
+  name: red
+  namespace: ipaas-fn
+spec:
+  name: red
+  image: kaykelins/red:get
+  labels:
+    com.openfaas.scale.min: "3"
+    com.openfaas.scale.max: "5"
+

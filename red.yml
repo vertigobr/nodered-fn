@@ -6,5 +6,5 @@ functions:
   red:
     lang: dockerfile
     handler: ./red
-    image: kaykelins/red:latest
+    image: kaykelins/red:get
 
