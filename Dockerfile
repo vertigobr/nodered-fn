@@ -1,11 +1,6 @@
-FROM openfaas/classic-watchdog:0.18.1 as watchdog
-
 FROM node:alpine
 
 RUN mkdir -p /data
-
-COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
-RUN chmod +x /usr/bin/fwatchdog
 RUN apk install curl
 
 # Add non root user
